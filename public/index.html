@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exam Topic Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>📚 Exam Topic Finder</h1>
+    <p class="sub">Upload your notes and PYQs, and we'll identify important topics for you. All processing happens locally using AI (Ollama).</p>
+
+    <section class="card">
+      <div class="field">
+        <label for="notes">1. Notes (PDF)</label>
+        <input type="file" id="notes" accept="application/pdf" />
+      </div>
+      <div class="field">
+        <label for="pyq">2. PYQ (PDF,  5 sets only)</label>
+        <input type="file" id="pyq" accept="application/pdf" multiple />
+      </div>
+      <button id="go">Analyze</button>
+      <p id="status" class="status"></p>
+    </section>
+
+    <section id="results" hidden>
+      <h2>🎯 Important Topics</h2>
+      <div id="topics"></div>
+
+      <h2>📝 Important parts of notes</h2>
+      <div id="chunks"></div>
+
+      <h2>❓ Question-wise mapping</h2>
+      <div id="questions"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
