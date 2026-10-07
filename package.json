@@ -14,7 +14,9 @@
   "dependencies": {
     "express": "^5.2.1",
     "multer": "^2.4.0",
-    "pdf-parse": "^1.1.1"
+    "pdf-parse": "^1.1.1",
+    "pdf-to-img": "^5.0.0",
+    "tesseract.js": "^7.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
